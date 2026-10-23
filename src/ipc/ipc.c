@@ -40,3 +40,16 @@ int close_fifo(int fd) {
     return close(fd);
 }
 
+// pour écrire dans un tube
+// fd est le descripteur du fichier 'le num d'id qu'on a récup quand on a ouvert le tube
+// *buf est l'@ en mémo où se trouvent les trames/données à envoyer
+// count est la taile en octets de la trame
+ssize_t write_fifo(int fd, const void *buf, size_t count) {
+    return write(fd,buf,count);
+}
+
+// pour lire depuis un tube
+ssize_t read_fifo(int fd, void *buf, size_t count) {
+    return read(fd,buf,count);
+}
+

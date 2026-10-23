@@ -29,4 +29,7 @@ int create_fifo(const char *fifo_path); // pour créer et init un tube grâce à
 int open_fifo_read(const char *fifo_path); // ouvre le tube en mode lecture
 int open_fifo_write(const char *fifo_path); // ouvre le tube en mode écriture
 int close_fifo(int fd); // fermer le tube
+ssize_t write_fifo(int fd, const void *buf, size_t count); // pour écrire dans un tube
+ssize_t read_fifo(int fd, void *buf, size_t count); // pour lire depuis un tube
+
 #endif // IPC_H
