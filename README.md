@@ -1,4 +1,4 @@
-# Projet TaskFlow Engine Abdel & Harini
+# Projet TaskFlow Engine Abdel & Harini (EN COURS)
 
 > **Moteur d'exécution concurrent de tâches & Profiler système en C**
 
